@@ -1,17 +1,17 @@
-function hoverChange_color()
+
+function pick2()
 {
-    document.body.style.backgroundColor = "blue";
-    console.log("function ran");
+    let choice = true;
+    console.log(choice);
+    sessionStorage.setItem("initialState", 'true');
+    console.log(sessionStorage);
 }
 
-function changeFont()
+function check()
 {
-    document.body.style.fontFamily = "verdana";
-    console.log("it ran")
+    if(sessionStorage.getItem("initialState") == 'true')
+    {
+        console.log("got key")
+        document.getElementById('startMenu').style.visibility = 'visible'
+    }
 }
-
-let luck = random(1,2);
-let type = false;
-
-if(luck == 1) type = true;
-else if (luck == 2) type = false;

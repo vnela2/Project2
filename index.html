@@ -7,8 +7,13 @@
     <title>Project 2</title>
     <link rel ="stylesheet" href = "css/stylesheetindex.css">
 </head>
-<body>
-    <div id="startMenu" class="container">
+<body onload = "check()">
+    <div id = "title" class = "container"> 
+        <form>
+            <h1> The Dilemma </h1>
+        </form> 
+    </div>
+    <div id = "startMenu" class = "container">
         <form action="pages/screen1.html">
             <button class="btn btn-danger btn-lg"> Start </button>
         </form>
@@ -16,5 +21,6 @@
     <a href = "pages/rulesPage.html" > Rules </a>
     </div>
     <script src = "js/sheet.js"></script>
+    <script> console.log(sessionStorage) </script>
 </body>
 </html>
